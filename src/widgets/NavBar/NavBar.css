@@ -1,0 +1,42 @@
+.nav {
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #f3edf7;
+}
+
+.nav__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 127%;
+    text-align: center;
+    color: #1c1b1f;
+}
+
+.nav__btn {
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav__btn:active {
+    transform: scale(.95);
+}
+.nav input{
+    width: 60%;
+}
+.nav input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #9d9d9d;
+    background: #f3edf7;
+}
+
+.butik{
+    cursor: pointer;
+}

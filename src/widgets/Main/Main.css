@@ -1,0 +1,136 @@
+.main__top {
+  margin-top: 47px;
+}
+
+.main__top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  color: #323232;
+}
+
+.top__btn {
+  border-radius: 16px;
+  padding: 16px 20px 16px 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #f3edf7;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #6750a4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.top__btn:active {
+  transform: scale(0.95);
+}
+
+.main__list {
+  margin-top: 30px !important;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.main__list.column {
+  grid-template-columns: 1fr;
+}
+
+.main__list article {
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #f3edf7;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.top.row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main__list h2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #1c1b1f;
+}
+
+.main__list span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: #cac4d0;
+}
+
+.main__list p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: #49454f;
+  margin-top: 16px;
+}
+
+.main__list article .options {
+  margin-top: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.main__list article .options button {
+  background: none;
+  padding: 12px;
+}
+
+.main__list article .options button span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6750a4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.main__list article .options button:nth-of-type(2) span {
+  color: #cf1b1b;
+}
+
+.main__list article .options button span:active {
+  transform: scale(0.95);
+}

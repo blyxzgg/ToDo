@@ -1,0 +1,133 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal__view {
+    padding: 24px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #f3edf7;
+    width: 100%;
+    max-width: 312px;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.modal__view h3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #1c1b1f;
+    margin-bottom: 8px;
+}
+
+.modal__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.modal__label input {
+    background: #e7e0ec;
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 56px;
+    padding: 24px 16px 8px 16px;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1c1b1f;
+    box-sizing: border-box;
+}
+
+.modal__label input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: rgb(59, 59, 59);
+}
+
+.modal__label span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    color: #6750a4;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background: transparent;
+    z-index: 1;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+}
+
+.modal__label input:focus+span,
+.modal__label input:not(:placeholder-shown)+span {
+    font-size: 12px;
+    top: 8px;
+}
+
+.modal__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.modal__buttons button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #6750a4;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.modal__buttons button.red {
+    color: #cf1b1b;
+}
+
+.modal__buttons button:active {
+    transform: scale(0.95);
+}
+
+.modal__buttons button:hover {
+    background-color: rgba(103, 80, 164, 0.08);
+}
+
+.modal__buttons button.red:hover {
+    background-color: rgba(207, 27, 27, 0.08);
+}
